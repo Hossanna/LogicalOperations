@@ -440,5 +440,57 @@ footer div{
 footer span{
     color: gray;
 }
+.mobile{
+    display: none;
+}
 
+@media screen and (max-width:800px) {
+    .big-screen{
+        display: none;
+    }
 
+    .mobile{
+        display: block !important;
+    }
+    .grid-container-mobile{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        display: grid;
+    }
+    .items-mobile{
+        cursor: pointer;
+        color: #fff;
+        background-color: #080e19;
+        border-bottom: 1px solid black;
+        padding: 5% 2%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        height: 100px;
+    }
+
+    .header-mobile{
+        text-align: center;
+        position: relative;
+    }
+    .footer-mobile{
+        text-align: center;
+        padding: 5% 0;
+    }
+
+    .blue{
+        background-color:#009ddc;
+    }
+    .red{
+        background-color:#972169;
+    }
+    .green{
+        background-color: #7fc027;
+    }
+    .yellow{
+        background-color: #ffc427 ;
+    }
+    
+}
